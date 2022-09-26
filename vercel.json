@@ -1,0 +1,28 @@
+{
+    "rewrites": [
+      {
+        "source": "",
+        "destination": "api/index.py"
+      },
+        {
+        "source": "/weibo",
+        "destination": "api/weibo/api.py"
+      },
+        {
+          "source": "/bb",
+          "destination": "api/bb/api.py"
+        },
+        {
+          "source": "/bbtalk",
+          "destination": "api/bb_all/api.py"
+        },
+        {
+          "source": "/GithubCalendar",
+          "destination": "api/GithubCalendar/api.py"
+        },
+        {
+          "source": "/GithubCalendar/api",
+          "destination": "api/GithubCalendar/api.py"
+        }
+    ]
+  }
