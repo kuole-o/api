@@ -14,7 +14,7 @@
         },
         {
           "source": "/bbtalk",
-          "destination": "api/bb_all/api.py"
+          "destination": "api/bbtalk/api.py"
         },
         {
           "source": "/GithubCalendar",
