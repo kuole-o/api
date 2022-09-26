@@ -12,11 +12,11 @@ from http.server import BaseHTTPRequestHandler
 
 
 app = Flask(__name__)
-""" @app.route('/(.*)',methods=['GET',['POST']])
+""" @app.route('/',methods=['GET',['POST']])
 def welcome():
     return 'Hello World' """
 
-@app.route('/(.*)',methods=['GET'])
+@app.route('/bbtalk',methods=['GET'])
 def get_data():
     skip = request.args.get('skip')
     limit = request.args.get('limit')
