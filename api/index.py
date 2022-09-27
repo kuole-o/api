@@ -2,7 +2,6 @@
 # @Author    : GuoLe
 # @Date      : 2022/9/26 20:50
 
-from tkinter import N
 import flask,json
 
 app = flask.Flask(__name__)
