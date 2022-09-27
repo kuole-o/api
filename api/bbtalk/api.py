@@ -7,16 +7,17 @@ from email import header
 import json
 import os
 import requests
-from flask import Flask, request
+from flask import request
 from http.server import BaseHTTPRequestHandler
 
-
+""" 
 app = Flask(__name__)
-""" @app.route('/',methods=['GET',['POST']])
+@app.route('/',methods=['GET',['POST']])
 def welcome():
-    return 'Hello World' """
+    return 'Hello World'
 
 @app.route('/bbtalk',methods=['GET'])
+"""
 def get_data():
     skip = request.args.get('skip')
     limit = request.args.get('limit')
