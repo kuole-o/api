@@ -2,8 +2,15 @@
 # @Author    : GuoLe
 # @Date      : 2022/9/26 20:50
 
+import flask,json
+
+server = flask.Flask(__name__)
+@server.route('/', methods=['GET','POST'])
+
 def hello_world():
-    return 'Hello world'
+    r = {'msg': 'Hello world','code':200}
+    return json.dumps(r,ensure_ascii=False)
 
 if __name__ == '__main__':
-    print (hello_world())
+#    print (hello_world())
+    server.run(port=5000,debug=True)
