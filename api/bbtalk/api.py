@@ -2,24 +2,16 @@
 # @Author    : GuoLe
 # @Date      : 2022/9/24 15:53
 
-from crypt import methods
-from email import header
 import json
 import os
 import requests
-from flask import request,flask
+import flask
+from flask import request
 from http.server import BaseHTTPRequestHandler
 
 
 app = flask.Flask(__name__)
-
-""" 
-@app.route('/',methods=['GET',['POST']])
-def welcome():
-    return 'Hello World'
-"""
-
-@app.route('/bbtalk',methods=['GET','POST'])
+@app.route('/bbtalk', methods=['GET','POST'])
 
 def get_data():
     skip = request.args.get('skip')
