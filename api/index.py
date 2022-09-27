@@ -4,13 +4,13 @@
 
 import flask,json
 
-server = flask.Flask(__name__)
-@server.route('/', methods=['GET','POST'])
+app = flask.Flask(__name__)
+@app.route('/', methods=['GET','POST'])
 
 def hello_world():
     r = {'msg': 'Hello world','code':200}
     return json.dumps(r,ensure_ascii=False)
 
 if __name__ == '__main__':
-#    print (hello_world())
-    server.run(port=5000,debug=True)
+    print (hello_world())
+#    app.run(port=5000,debug=True)
